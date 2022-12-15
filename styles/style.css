@@ -1,0 +1,13 @@
+.form-box{
+    width: 380px;
+    height: 480;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+    
+}
+.button-container{
+    width: 220px;
+    margin: 35px auto;
+}

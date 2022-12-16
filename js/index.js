@@ -1,3 +1,4 @@
+//created a nav-feature to allow for sleek scroll 
 let nav = document.querySelector('nav');
 
       window.addEventListener('scroll', function () {

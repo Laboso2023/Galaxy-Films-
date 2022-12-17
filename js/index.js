@@ -8,3 +8,7 @@ let nav = document.querySelector('nav');
           nav.classList.remove('bg-dark', 'shadow');
         }
       });
+
+     const button = document.getElementById('button')
+     const bodyContent = document.getElementById('lds-roller')
+

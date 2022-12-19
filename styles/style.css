@@ -55,7 +55,7 @@ main{
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem 1rem;
-  letter-spacing: 1rem;
+  letter-spacing: 1px;
 }
 .movie-info span{
   background-color: var(--secondary-color);
@@ -63,3 +63,10 @@ main{
   border-radius: 3px;
   font-weight: bold;
 }
+.movie-info span.green{
+  color: lightgreen;}
+.movie-info span.orange{
+  color: orange;}
+.movie-info span.red{
+  color: red;}
+

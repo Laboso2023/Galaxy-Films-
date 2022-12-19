@@ -16,4 +16,24 @@ const baseUrl = 'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.
 const imagePath = 'https://image.tmdb.org/t/p/w1280/';
 const searchAPI = "https://api.themoviedb.org/3/search/movie?api_key=5c6898b87a119919b82f3da7cb07bc46&query="
 
-const form
+const form = document.getElementById('form')
+const search = document.getElementById('search')
+const main = document.getElementById('main')
+
+// here we getting the movies
+getMovies(baseUrl)
+async function getMovies(url){
+const res = await fetch (url)
+const data = res.json()
+console.log(data.results)
+}
+form.addEventListener('submit',(e) =>{
+  e.preventDefault()
+  const searchValue = search.value 
+  if(searchValue && searchValue !== ''){
+    getMovies(searchAPI+searchValue)
+    searchValue=''
+  }else{
+    window.location.reload
+  }
+} )

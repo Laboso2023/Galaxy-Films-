@@ -86,7 +86,7 @@ body{
 }
 
 span{
-    color: #777;
+    color: rgb(33, 168, 112);
     font-size: 12px;
     bottom: 68px;
     position: absolute;
@@ -94,7 +94,7 @@ span{
 
 
 .nav-wrapper{
-    background-color: #11070773;
+    background-color: #a1151573;
     background-image: url('./assets/galaxy.jpg');
     background-blend-mode: darken; }
 .nav-wrapper a{

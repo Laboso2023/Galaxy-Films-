@@ -24,7 +24,7 @@ const main = document.getElementById('main')
 getMovies(baseUrl)
 async function getMovies(url){
 const res = await fetch (url)
-const data = res.json()
+const data = await res.json()
 console.log(data.results)
 }
 form.addEventListener('submit',(e) =>{

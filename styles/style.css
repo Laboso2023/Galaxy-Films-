@@ -57,3 +57,9 @@ main{
   padding: 0.5rem 1rem 1rem;
   letter-spacing: 1rem;
 }
+.movie-info span{
+  background-color: var(--secondary-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-weight: bold;
+}

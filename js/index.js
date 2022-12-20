@@ -33,7 +33,11 @@ movies.forEach((movie) => {
   const {title,poster_path,vote_average,overview}=movie
   const moviesElement = document.createElement('div')
   moviesElement.classList.add('movie')
-  
+  moviesElement.innerHTML = `
+  <img src = "${IMGE_PATH} + ${poster_path}" alt="${title}" />
+  <div class = 'movie-info'>
+  <h3>${title}</h3>
+  `
 });
 }
 form.addEventListener('submit',(e) =>{

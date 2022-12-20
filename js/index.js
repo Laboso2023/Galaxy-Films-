@@ -12,6 +12,13 @@
 //      const button = document.getElementById('button')
 //      const bodyContent = document.getElementById('lds-roller')
 //      const dataInput = document.getElementsBy
+window.onload = function () {
+  document.getElementById("main").style.display = "none";
+  document.getElementById("form").style.display = "none";
+  
+}
+
+
 const baseUrl = 'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=5c6898b87a119919b82f3da7cb07bc46&page=1'
 const imagePath = 'https://image.tmdb.org/t/p/w1280/';
 const searchAPI = "https://api.themoviedb.org/3/search/movie?api_key=5c6898b87a119919b82f3da7cb07bc46&query="

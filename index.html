@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles/style.css"/>
+    <style>
+      p {
+        background-image: url('./assets/galaxy.jpg');
+      }
+      </style>
 
   </head>
   <body>
@@ -13,15 +18,15 @@
     <div
     class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center"
   >
-    <div class="content text" id="login"> 
-      <div class="card"> 
-          <div class="card-content"> 
-             <div class="form-box">
+    <div class="content text" id="login" style="background-image: url(./assets/galaxy.jpg);"> 
+      <div class="card" > 
+          <div class="card-content" > 
+             <div class="form-box" style="background-image: url(./assets/galaxy.jpg);">
               <h1>GALAXY FILMS</h1>
              <h5>Please Enter Your Account Details</h5>
               <form id="login"  class="input-group">
-                  <input type="text" class="input-field" placeholder="User Id"required>
-                  <input type="text" class="input-field" placeholder="Enter Password"required>
+                  <input type="text" class="input-field" placeholder="User Id"required style="background-color: #DE3163;">
+                  <input type="text" class="input-field" placeholder="Enter Password"required style="background-color: #de3163;">
                  <input type="checkbox" class="check-box"><span>Remember Password</span>
                  <button type="submit" class="submit-btn" id="loginBtn">Log in</button>        
               </form>
@@ -33,13 +38,20 @@
   </div>
     <!-- header area -->
   <header>
+    <nav id="nav">
+      <div class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3" style="background-color: #DE3163;">
+          <a href="" class="brand-logo center">GALAXY FILMS</a>
+          <a href="" class="btn btn-outline-danger"> LOGIN</a>
+        
+      </div>
+  </nav>
     <form id="form">
       <input type="text" id="search" class="search" placeholder="search...">
     </form>
   </header>
 
   <!-- main section -->
-  <main id="main">
+  <main id="main" style="background-image: url(./assets/galaxy.jpg);">
     <div class="movie">
       <img src="./assets/galaxy.jpg" alt="">
       <div class="movie-info">

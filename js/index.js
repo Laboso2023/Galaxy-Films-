@@ -22,6 +22,7 @@ window.onload = function () {
     document.getElementById("main").style.display = "flex"
     document.getElementById("form").style.display = "block"
     document.getElementById("login").style.display = "none"
+    document.getElementById("nav").style.display = "none"
   })
 }
 

@@ -29,7 +29,9 @@ console.log(data.results)
 }
 function displayMovies(movies){
 main.innerHTML = ''
-MediaDevices.h
+movies.forEach((movie) => { 
+  
+});
 }
 form.addEventListener('submit',(e) =>{
   e.preventDefault()

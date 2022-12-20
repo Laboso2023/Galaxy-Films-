@@ -27,6 +27,10 @@ const res = await fetch (url)
 const data = await res.json()
 console.log(data.results)
 }
+function displayMovies(movies){
+main.innerHTML = ''
+MediaDevices.h
+}
 form.addEventListener('submit',(e) =>{
   e.preventDefault()
   const searchValue = search.value 

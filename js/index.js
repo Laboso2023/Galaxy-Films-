@@ -25,7 +25,8 @@ getMovies(baseUrl)
 async function getMovies(url){
 const res = await fetch (url)
 const data = await res.json()
-console.log(data.results)
+displayMovies(data.results)
+console.log(data.results);
 }
 function displayMovies(movies){
 main.innerHTML = ''
@@ -34,7 +35,7 @@ movies.forEach((movie) => {
   const moviesElement = document.createElement('div')
   moviesElement.classList.add('movie')
   moviesElement.innerHTML = `
-  <img src = "${IMGE_PATH} + ${poster_path}" alt="${title}" />
+  <img src = "${imagePath} + ${poster_path}" alt="${title}" />
   <div class = 'movie-info'>
   <h3>${title}</h3>
   <span class="${getClassByRating(vote_average)}"> ${vote_average}</span>
@@ -44,8 +45,22 @@ movies.forEach((movie) => {
   </div>
   </div>
   `
+  main.appendChild(moviesElement)
 });
 }
+
+function getClassByRating(rating) {
+  if(rating>=8){
+    return 'green'
+  }else if(rating>=5){
+    return 'orange'
+  }else{
+    return 'red'
+  }
+}
+
+
+
 form.addEventListener('submit',(e) =>{
   e.preventDefault()
   const searchValue = search.value 

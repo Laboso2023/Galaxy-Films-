@@ -30,6 +30,9 @@ console.log(data.results)
 function displayMovies(movies){
 main.innerHTML = ''
 movies.forEach((movie) => { 
+  const {title,poster_path,vote_average,overview}=movie
+  const moviesElement = document.createElement('div')
+  moviesElement.classList.add('movie')
   
 });
 }

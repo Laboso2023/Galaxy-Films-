@@ -7,8 +7,9 @@ Galaxy Films is a movie app that allows you to see the trending movies and searc
 
 ## User Story
 - the user is able to view a list of trending movies. 
-- The user is able to see the overview/details of each movie displayed when the user points at any film
+- The user is able to see the overview/details of each movie displayed when the pointer is at any film
 - the user is able to search for the films. 
+-the user can see the ratings of the films from 1-10, with different colors based on the ratings. Red is bad, orange is good, and green is excellent
 - the use is also able to login the app first before seeing the landing page
 ## Development Requirements
 

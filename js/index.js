@@ -15,7 +15,14 @@
 window.onload = function () {
   document.getElementById("main").style.display = "none";
   document.getElementById("form").style.display = "none";
-  
+  document.getElementById("login").style.display = "block"
+
+  //add event listener for
+  document.getElementById("loginBtn").addEventListener("click", function(){
+    document.getElementById("main").style.display = "flex"
+    document.getElementById("form").style.display = "block"
+    document.getElementById("login").style.display = "none"
+  })
 }
 
 
@@ -70,7 +77,7 @@ function getClassByRating(rating) {
 
 form.addEventListener('submit',(e) =>{
   e.preventDefault()
-  const searchValue = search.value 
+  let searchValue = search.value 
   if(searchValue && searchValue !== ''){
     getMovies(searchAPI+searchValue)
     searchValue=''

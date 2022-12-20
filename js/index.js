@@ -37,6 +37,12 @@ movies.forEach((movie) => {
   <img src = "${IMGE_PATH} + ${poster_path}" alt="${title}" />
   <div class = 'movie-info'>
   <h3>${title}</h3>
+  <span class="${getClassByRating(vote_average)}"> ${vote_average}</span>
+  <div class = 'overview'>
+  <h3>Overview</h3>
+  ${overview}
+  </div>
+  </div>
   `
 });
 }

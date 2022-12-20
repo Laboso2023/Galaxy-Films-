@@ -35,7 +35,7 @@ movies.forEach((movie) => {
   const moviesElement = document.createElement('div')
   moviesElement.classList.add('movie')
   moviesElement.innerHTML = `
-  <img src = "${imagePath} + ${poster_path}" alt="${title}" />
+  <img src = "${imagePath + poster_path}" alt="${title}" />
   <div class = 'movie-info'>
   <h3>${title}</h3>
   <span class="${getClassByRating(vote_average)}"> ${vote_average}</span>
